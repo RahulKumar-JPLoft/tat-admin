@@ -127,7 +127,7 @@ const TotalPaymentDetail = (props) => {
             },
 
             {
-              title: "Amount",
+              title: "Plan Price",
               field: "amount",
               render: (rowData) =>
                 rowData?.amount ? `$ ${rowData.amount}` : "",

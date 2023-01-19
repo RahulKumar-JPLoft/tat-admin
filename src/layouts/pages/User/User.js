@@ -112,7 +112,7 @@ const User = () => {
 
   useEffect(() => {
     const callapi = async () => {
-      let url = "https://api.tapatradie.com/backend/v2/users/user?";
+      let url = "http://3.109.98.222:3349/backend/v2/users/user?";
       if (searchBox) {
         url += `${SearchSelect}=${searchBox}`;
       }

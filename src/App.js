@@ -307,6 +307,7 @@ import {
 // Images
 import brand from "assets/images/BrandIcon.svg";
 import brandName from "assets/images/BrandName.svg";
+import Cookies from "js-cookie";
 
 export default function App() {
   const spinner = document.getElementById("spinner");
@@ -407,10 +408,10 @@ export default function App() {
     </SuiBox>
   );
 
-  const tokenTap = localStorage.getItem("TapToken");
+  const tokenTap = Cookies.get("TapToken");
 
   if (tokenTap == null) {
-    localStorage.removeItem("TapToken");
+    Cookies.remove("TapToken");
   }
 
   const RedirectToLogin = () => {

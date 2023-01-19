@@ -515,26 +515,26 @@ function Default() {
                   items={items}
                 />
               </Grid>
-              <Grid item xs={12} lg={12}>
+              {/* <Grid item xs={12} lg={12}>
                 <ReportsBarChart
                   title="active users"
                   // chart={chart}
                   items={newItems}
                 />
-              </Grid>
-              <Grid item xs={12} lg={12}>
+              </Grid> 
+            <Grid item xs={12} lg={12}>
                 <ReportsBarChart
                   title="active users"
                   // chart={chart}
                   items={allUser}
                 />
-              </Grid>
+              </Grid> */}
             </Grid>
           </Grid>
-          <Grid container spacing={1} mt={2}>
+          {/* <Grid container spacing={1} mt={2}>
             <Grid item xs={12} lg={4}>
               <SuiBox mb={3}>
-                {/* <SalesTable title="Top 5 Countries" rows={salesTableData} /> */}
+                
                 <MUITable
                   label={CountryLabel}
                   tableData={data ? data?.top5country : "N/A"}
@@ -557,8 +557,9 @@ function Default() {
                 />
               </SuiBox>
             </Grid>
-          </Grid>
-          <Grid container spacing={1}>
+          </Grid> 
+          
+           <Grid container spacing={1}>
             <Grid item xs={12} lg={5}>
               <SuiBox mb={3} ref={myRef}>
                 <TableContainer component={Paper} style={{ height: "32rem" }}>
@@ -605,7 +606,7 @@ function Default() {
                 SetSelectYear={SetSelectYear}
               />
             </Grid>
-          </Grid>
+          </Grid> */}
           {/* <Card>
             <iframe
               src="https://www.google.com/maps/embed"

@@ -24,13 +24,31 @@ const SubscriptionDetails = (props) => {
             </span>
           </Grid>
           <Grid item xs={5} md={4} lg={4} sm={5}>
-            <h6>Amount:</h6>
+            <h6>Plan Price:</h6>
           </Grid>
           <Grid item xs={7} md={8} lg={8} sm={7}>
             <span style={{ fontSize: "15px", fontWeight: "normal" }}>
               {subscriptionData?.amount
                 ? `$ ${subscriptionData?.amount}`
                 : "N/A"}
+            </span>
+          </Grid>
+          <Grid item xs={5} md={4} lg={4} sm={5}>
+            <h6>Plan Name:</h6>
+          </Grid>
+          <Grid item xs={7} md={8} lg={8} sm={7}>
+            <span style={{ fontSize: "15px", fontWeight: "normal" }}>
+              {subscriptionData?.plandescription
+                ? subscriptionData?.plandescription
+                : "N/A"}
+            </span>
+          </Grid>
+          <Grid item xs={5} md={4} lg={4} sm={5}>
+            <h6>Plan Id:</h6>
+          </Grid>
+          <Grid item xs={7} md={8} lg={8} sm={7}>
+            <span style={{ fontSize: "15px", fontWeight: "normal" }}>
+              {subscriptionData?.plan_id ? subscriptionData?.plan_id : "N/A"}
             </span>
           </Grid>
           <Grid item xs={5} md={4} lg={4} sm={5}>
@@ -44,24 +62,7 @@ const SubscriptionDetails = (props) => {
                 : "N/A"}
             </span>
           </Grid>
-          <Grid item xs={5} md={4} lg={4} sm={5}>
-            <h6>Plan Id:</h6>
-          </Grid>
-          <Grid item xs={7} md={8} lg={8} sm={7}>
-            <span style={{ fontSize: "15px", fontWeight: "normal" }}>
-              {subscriptionData?.plan_id ? subscriptionData?.plan_id : "N/A"}
-            </span>
-          </Grid>
-          <Grid item xs={5} md={4} lg={4} sm={5}>
-            <h6>Plan Name:</h6>
-          </Grid>
-          <Grid item xs={7} md={8} lg={8} sm={7}>
-            <span style={{ fontSize: "15px", fontWeight: "normal" }}>
-              {subscriptionData?.plan_name
-                ? subscriptionData?.plan_name
-                : "N/A"}
-            </span>
-          </Grid>
+
           <Grid item xs={5} md={4} lg={4} sm={5}>
             <h6>Subscription Id:</h6>
           </Grid>

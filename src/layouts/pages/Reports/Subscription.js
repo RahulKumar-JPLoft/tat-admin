@@ -202,10 +202,15 @@ const Subscription = () => {
               },
 
               {
-                title: "Amount",
+                title: "Plan Price",
                 field: "amount",
                 render: (rowData) =>
                   rowData?.amount ? `$ ${rowData.amount}` : "",
+              },
+              {
+                title: "Plan Name",
+                field: "planname",
+                render: (rowData) => <span>{rowData?.plandescription}</span>,
               },
               {
                 title: "Start Date",
@@ -269,6 +274,7 @@ const Subscription = () => {
                 title: "Plan Id",
                 field: "plan_id",
               },
+
               {
                 title: "Subscription Id",
                 field: "subscription_id",
@@ -300,6 +306,13 @@ const Subscription = () => {
                     </Link>
                   </>
                 ),
+              },
+              {
+                title: "Payment Status",
+                field: "payment_status",
+                render: (rowData) =>
+                  rowData.payment_status?.charAt(0).toUpperCase() +
+                  rowData.payment_status?.slice(1),
               },
               {
                 title: "Status",

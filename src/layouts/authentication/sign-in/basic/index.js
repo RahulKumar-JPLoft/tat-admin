@@ -1,17 +1,3 @@
-/**
-=========================================================
-* Soft UI Dashboard PRO React - v3.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 import { useState, useEffect } from "react";
 
@@ -56,6 +42,7 @@ toast.configure();
 import { useDispatch, useSelector } from "react-redux";
 import { authSignIn } from "redux/actions/action";
 import { InputAdornment } from "@mui/material";
+import Cookies from 'js-cookie'
 
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);
@@ -69,7 +56,7 @@ function Basic() {
   const history = useHistory();
 
   localStorage.setItem("uid", data?.data?.id);
-  const tokenTap = localStorage.getItem("TapToken");
+  const tokenTap = Cookies.get("TapToken");
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
   useEffect(() => {
@@ -93,7 +80,7 @@ function Basic() {
   useEffect(() => {
     if (data) {
       if (data.status === 1) {
-        localStorage.setItem("TapToken", true);
+        Cookies.set("TapToken", true);
         toast.success("Login Successfully", {
           autoClose: 2000,
           size: "small",

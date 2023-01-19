@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Soft UI Dashboard PRO React - v3.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Grid from "@mui/material/Grid";
 
@@ -86,8 +71,7 @@ function Footer() {
         </Grid> */}
         <Grid item xs={12} lg={8} sx={{ textAlign: "center" }}>
           <SuiTypography variant="body2" color="secondary">
-            Copyright &copy; 2021-2022 &nbsp;
-            <a href="https://www.jploft.com/">JPLoft.com</a> .
+            Copyright &copy; {new Date().getFullYear()}&nbsp;TapATradie. All rights reserved.
           </SuiTypography>
         </Grid>
       </Grid>

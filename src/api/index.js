@@ -1,4 +1,5 @@
-export const baseUrl = "https://api.tapatradie.com/backend/v2/";
+// export const baseUrl = "https://api.tapatradie.com/backend/v2/";
+export const baseUrl = "http://3.109.98.222:3349/backend/v2/";
 
 // For Settings/ Home and login
 

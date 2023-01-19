@@ -50,6 +50,7 @@ function Footer({ company, links }) {
       justifyContent="space-between"
       alignItems="center"
       px={1.5}
+      style={{position:"fixed", bottom:0}}
     >
       <SuiBox
         display="flex"
@@ -60,21 +61,11 @@ function Footer({ company, links }) {
         fontSize={size.sm}
         px={1.5}
       >
-        &copy; 2021-2022, made with
-        <SuiBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>
-          <Icon color="inherit" fontSize="inherit">
-            favorite
-          </Icon>
-        </SuiBox>
-        by
-        <Link href="https://www.jploft.com/" target="_blank">
-          <SuiTypography variant="button" fontWeight="medium">
-            &nbsp;JP Loft Pvt Ltd&nbsp;
-          </SuiTypography>
-        </Link>
-      
+
+          Copyright &copy; {new Date().getFullYear()}&nbsp;TapATradie. All
+          rights reserved.
+    
       </SuiBox>
-     
     </SuiBox>
   );
 }
