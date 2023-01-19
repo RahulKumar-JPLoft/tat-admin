@@ -1,0 +1,45 @@
+@media (max-width: 510px) {
+  .addNew {
+    position: relative !important;
+  }
+  .searchSelect {
+    position: relative !important;
+  }
+  .searchBox {
+    position: relative !important;
+    margin: "10px 0px 5px 5px" !important;
+  }
+}
+@media (max-width: 770px) {
+  .searchBox {
+    margin: 10px 0px 5px 34px !important;
+  }
+}
+.searchSelect {
+  /* margin: 0px 0px 5px 5px !important; */
+  border-radius: 5px !important;
+  position: absolute;
+  z-index: 1;
+  width: 140px !important;
+  /* right: 0;
+  left: 200px;*/
+  margin: 10px auto !important;
+}
+.searchFLoat {
+  /* margin: 0px 0px 5px 5px !important; */
+  border-radius: 5px !important;
+  position: absolute;
+  z-index: 1;
+  width: 140px !important;
+  float: right;
+}
+
+/* .MuiTypography-caption {
+  display: none;
+} */
+/* .MuiTablePagination-caption {
+  display: none;
+} */
+.MTablePaginationInner-root-14 .MuiTypography-root {
+  display: none !important;
+}
